@@ -15,7 +15,11 @@ div.ex {
 	width: 35%;
 	padding: 10px;
 	border: 5px solid grey;
-	margin: 0px
+	margin: 0px;
+}
+caption {
+	font-weight: bold;
+	text-align: center;
 }
 </style>
 
@@ -25,7 +29,7 @@ div.ex {
 
 		<form action="/hw1-helloMVC/doRegister" method="post">
 			<table cellpadding="5">
-				<caption style="font-weight: bold; text-align: center">Enter Information Here</caption>
+				<caption>Enter Information Here</caption>
 				<tr>
 					<td>아이디</td>
 					<td><input type="text" name="id" /></td>
