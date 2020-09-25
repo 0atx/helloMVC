@@ -51,6 +51,7 @@ public class CustomerService {
 	public Customer register(String id, String password, String name, String gender, String email) {
 		
 		Customer customer = new Customer(id, password, name, gender, email);
+		
 		addCustomer(customer);
 		System.out.println("register success");
 		return customer;

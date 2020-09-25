@@ -18,11 +18,13 @@ public class Customer {
 	public Customer() { super(); }
 
 	public Customer(String id, String password, String name, String gender, String email) {
+		
 		this.id = id;
 		this.password = password;
 		this.name = name;
 		this.gender = gender;
 		this.email = email;
+		
 	}
 	
 	public String getId() {
