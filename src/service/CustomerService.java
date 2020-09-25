@@ -50,7 +50,14 @@ public class CustomerService {
 	
 	public Customer register(String id, String password, String name, String gender, String email) {
 		
-		Customer customer = new Customer(id, password, name, gender, email);
+		//Customer customer = new Customer(id, password, name, gender, email);
+		
+		Customer customer = new Customer();
+		customer.setId(id);
+		customer.setPassword(password);
+		customer.setName(name);
+		customer.setGender(gender);
+		customer.setEmail(email);
 		
 		addCustomer(customer);
 		System.out.println("register success");

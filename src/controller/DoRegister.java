@@ -13,7 +13,7 @@ import model.Customer;
 import service.CustomerService;
 
 /**
- * Servlet implementation class DoLogin
+ * Servlet implementation class DoRegister
  */
 @WebServlet("/doRegister")
 public class DoRegister extends HttpServlet {
@@ -46,17 +46,6 @@ public class DoRegister extends HttpServlet {
 		page ="/view/registerSuccess.jsp";
 		request.setAttribute("customer", customer);
 		
-		/*
-		if(customer == null) {
-			page ="/view/loginFail.jsp";
-			request.setAttribute("id", id);
-		}
-		else {
-			page ="/view/registerSuccess.jsp";
-			request.setAttribute("customer", customer);
-		}
-		*/
-			
 		RequestDispatcher dispatcher = request.getRequestDispatcher(page);
 		dispatcher.forward(request, response);
 	}
